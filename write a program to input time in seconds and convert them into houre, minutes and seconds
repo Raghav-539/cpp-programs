@@ -1,0 +1,28 @@
+// write a program to input time in seconds and convert them into houre, minutes and seconds
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int min = 0;
+    int secs, hrs, sec;
+    cout << "enter time in seconds : " ;
+    cin >> secs;
+
+    hrs= secs/3600 ;  // to get hours
+    sec = secs%3600;   // to get minutes
+    
+    if (sec > 0){     
+        min = sec/60;
+    }
+
+    int secs_left = ((sec%60)>0) ? (sec%60):0;  // to get second
+    secs_left = sec%60;
+
+    cout << "time in hour is : " << hrs << " hr" << endl; 
+    cout << "time in minutes is : " << min << " min" << endl; 
+    cout << "time in seconds is : " << secs_left << " secs"<< endl; 
+    return 0;
+}
