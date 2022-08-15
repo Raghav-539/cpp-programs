@@ -1,0 +1,28 @@
+// check your grade using for loop
+
+#include <iostream>
+using namespace std;
+  
+int main()
+{
+    float cgpa;
+    cout << "enter your cgpa : " ;
+    cin >> cgpa;
+
+    if(cgpa<=10 && cgpa >9){
+        cout<< " your grade is O.";
+    }
+    else if(cgpa<=9 && cgpa >8){
+        cout<< " your grade is E.";
+    }
+    else if(cgpa<=8 && cgpa >6){
+        cout<< " your grade is G.";
+    }
+    else if(cgpa<=6 && cgpa >4){
+        cout<< " your grade is F.";
+    }
+    else{
+        cout << "you are fail.";
+    }
+    return 0;
+}

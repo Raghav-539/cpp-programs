@@ -1,0 +1,21 @@
+// write a program to discount an 8% on bill to a given amount
+// formula (amount - (amount*(percentage_to_reduce/100)))
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    int amount;
+    float final_amount;
+    
+    cout << "enter the amount : " ;
+    cin >> amount;
+
+    final_amount = amount - (amount*0.08) ;
+
+    cout << "final amount after reducing 8 percent on bill is : " << final_amount;
+
+    return 0;
+
+}
